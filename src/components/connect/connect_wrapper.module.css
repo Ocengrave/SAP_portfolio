@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+.connect_wrapper
+{
+    display: grid;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "logo connect";
+    background-color: #F4F4F4;
+    box-shadow: 1px 1px 1px 0#E0E0E0;
+    padding: 10px;
+}
+
+.logo
+{
+grid-area: logo;
+  justify-self: center;
+}
+.logo_container
+{
+max-width: 600px;
+}
+.logo_info
+{
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+
+}
+@media all and (max-width:850px)
+{
+    .logo_info
+{
+    font-size: 22px;
+}
+
+}
+.connect{
+grid-area: connect;
+justify-self: center;
+}
+.DominiSocial{
+    color:rgba(245, 132, 2, 0.986);
+    font-weight: bold;
+}
+
+.DominiGames
+{
+    color:rgba(245, 132, 2, 0.986);
+    font-weight: bold;
+}
+
+.submit
+{
+    background-color: rgba(245, 132, 2, 0.986);
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'EB Garamond', serif;
+    box-shadow: 1px 1px 1px 0#E0E0E0;
+    
+
+}
+.login
+{
+    background-color: white(245, 132, 2, 0.986);
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #9b9a9a;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'EB Garamond', serif;
+    box-shadow: 1px 1px 1px 0#E0E0E0;
+    border: 1px solid #dddfe2;
+
+}
+.p_reg
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 450px;
+}
+.no_reg
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color:#1877f2;
+}
+.target
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    color: #9b9a9a;
+}
+.podr
+{
+    padding: 10px;
+    font-size: 8px;
+}
+.no_reg_text
+{
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    text-shadow: 0px 1px 0px #E0E0E0;
+    
+}
+.no_reg_text:hover
+{
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+    color:#4e98f8;
+ 
+}
+.p_pas
+{
+    padding: 10px;
+}
+.p_log{
+    padding: 10px;
+}
+.in{
+    padding: 10px;   
+    box-shadow: 0px 1px 0px 0#E0E0E0;
+    width: 350px;
+    
+}
+.password
+{
+    background-color: white(245, 132, 2, 0.986);
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    color: #9b9a9a;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'EB Garamond', serif;
+    box-shadow: 1px 1px 1px 0#E0E0E0;
+    border: 1px solid #dddfe2;
+    padding: 5px;
+
+}
+.submit:hover
+{
+    background-color: rgba(221, 121, 6, 0.986);
+
+}
+.register_form_wrapper
+{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    max-width: 450px;
+    
+    justify-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+}
+.pass_none
+{
+
+    padding: 10px;
+    color: #1877f2;
+    font-size: 14px;
+    text-align: center;
+}
+.pass_none:hover
+{
+
+    text-decoration: underline;
+}
+
+@media all and (max-width:1024px)
+{
+    .logo_info
+    {
+        text-align: center;
+    }
+    .connect_wrapper
+    {
+        display: grid;
+        align-items: center;
+        grid-template-rows: 150px 550px;
+        justify-self:stretch;  
+        grid-template-areas: 
+        "logo"
+        "connect";
+        background-color: #F4F4F4;
+        box-shadow: 1px 1px 1px 0#E0E0E0;
+        padding: 10px;
+    }
+    .connect
+    {
+        margin: 0 auto;
+    }
+
+    
+}
+
+@media all and (max-width:450px)
+{
+
+    .connect_wrapper
+    {
+        grid-template-rows: 150px 450px;
+        justify-self:stretch;  
+    }
+    .connect{
+        grid-area: connect;
+      
+        }
+    .login
+    {
+        width: 280px;
+    }
+    .password
+    {
+        width: 280px;
+    }
+    .in
+    {
+        width: 280px;
+    }
+    .submit
+    {
+        width:290px;
+    }
+
+
+    
+}
