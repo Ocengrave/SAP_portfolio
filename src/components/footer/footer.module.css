@@ -1,6 +1,15 @@
 .footer
 {
     grid-area:footer;
+    background-image: url(https://en.cdprojektred.com/wp-content/themes/evp-cdpr/img/triangles-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
 }
 a{
     text-decoration: none;
