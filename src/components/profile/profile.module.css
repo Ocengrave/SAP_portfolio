@@ -36,7 +36,7 @@
     grid-gap: 40px;
     display: grid;
     grid-template-columns: 350px 1fr;
-    grid-template-rows: 350px 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "avatar about_profile_info"
     "friends info";
@@ -56,4 +56,100 @@
     background-color: #ff9100;
     box-shadow: 0px 1px 0px 0#E0E0E0;
 
+}
+@media all and (max-width:1280px)
+{
+    .profile
+    {
+        display: none;
+    }
+    .center_wrapper
+    {
+        display: none;
+    }
+    .right_margin
+    {
+        display: none;
+    }
+    .profile_mobile
+    {
+    font-family: 'Comfortaa', cursive;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "header_mobile header_mobile header_mobile"
+    "center_wrapper_mobile center_wrapper_mobile center_wrapper_mobile";
+    }
+    .header_mobile
+    {
+    grid-area:header_mobile ;
+    background-color: #ff9100;
+    box-shadow: 0px 1px 0px 0#E0E0E0;
+    }
+    .center_wrapper_mobile
+    {
+        display: grid;
+        grid-area: center_wrapper_mobile;
+        padding: 10px;
+        grid-template-columns: 20% 1fr;
+        grid-template-areas: 
+        "avatar_mobile profil_info_mobile";
+        grid-gap: 10px;
+    }
+    .avatar_mobile
+    {
+        grid-area:avatar_mobile ;
+    }
+    .profil_info_mobile
+    {
+        grid-area:profil_info_mobile ;
+    }
+    .menu_mobile
+    {
+        display: flex;
+        justify-content: center;
+        grid-area: menu_mobile;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    .menu_mobile_item
+    {
+        padding: 10px;
+    }
+    .menu_mobile_small
+    {
+        display: none;
+    }
+}
+@media all and (max-width:700px)
+{
+    .menu_mobile_small
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: menu_mobile;
+        color: gray;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    .center_wrapper_mobile
+    {
+        display: grid;
+        grid-area: center_wrapper_mobile;
+        padding: 10px;
+        grid-template-columns: 20% 1fr;
+        grid-template-areas: 
+        "menu_mobile menu_mobile"
+        "avatar_mobile profil_info_mobile";
+        grid-gap: 10px;
+    }
+    .menu_mobile
+    {
+        display: none;
+    }
 }
