@@ -1,0 +1,59 @@
+.profile
+{
+    font-family: 'Comfortaa', cursive;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 30px 1fr;
+     grid-template-areas: 
+     "header header header"
+     "left_margin center_wrapper right_margin";
+}
+.center_wrapper
+{
+    grid-area:center_wrapper ;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+    "left_menu about_profile";
+    padding: 20px;
+    grid-gap: 10px;
+}
+.left_menu
+{
+    grid-area:left_menu;
+    padding: 10px;
+}
+.about_profile
+{
+    grid-area:about_profile;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    box-shadow: 0px 1px 0px 0px #E0E0E0;
+    grid-gap: 40px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas: 
+    "avatar about_profile_info"
+    "friends info";
+}
+.left_margin
+{
+    grid-area:left_margin ;
+}
+.right_margin
+{
+    grid-area:right_margin ;
+}
+
+.header
+{
+    grid-area:header ;
+    background-color: #ff9100;
+    box-shadow: 0px 1px 0px 0#E0E0E0;
+
+}

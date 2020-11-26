@@ -1,8 +1,12 @@
 import s_connectW from './connect_wrapper.module.css'
+import {NavLink,Route} from 'react-router-dom';
+
 const Connect_wrapper=()=>
 {
     return(
+        
     <div className={s_connectW.connect_wrapper}>
+        
             <div className={s_connectW.logo}>
             <div className={s_connectW.logo_container}>
                 <h2 className={s_connectW.logo_info}>
@@ -16,7 +20,7 @@ const Connect_wrapper=()=>
                     <div className={s_connectW.p_reg}>
                 <div className={s_connectW.p_log}><input type="text" className={s_connectW.login} placeholder="Электронный адрес или логин"></input></div>
                 <div className={s_connectW.p_pas}><input type="password" className={s_connectW.password } placeholder="Пароль"></input></div>
-                <div className={s_connectW.in}><input value="Вход" type="Submit" className={s_connectW.submit}></input>
+                <div className={s_connectW.in}><NavLink to="/profile"><input value="Вход" type="Submit" className={s_connectW.submit}></input></NavLink>
                 <div className={s_connectW.pass_none}>Забыли пароль?</div></div>
                 <div className={s_connectW.no_reg}><h2 className={s_connectW.no_reg_text}>Создать аккаунт</h2></div>
                 </div>

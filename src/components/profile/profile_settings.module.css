@@ -1,0 +1,93 @@
+.left_menu
+{
+ text-decoration: none;
+ text-align: left;
+ color: #9b9a9a;
+ font-size: 17px;
+ font-weight: 500;
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ box-shadow: 1px 0px 0px #E0E0E0;
+
+}
+
+.left_menu li
+{
+ list-style: none;
+ display: flex;
+ padding: 15px;
+}
+.avatar
+{
+    grid-area: avatar;
+    justify-self: center;
+}
+.about_profile_info
+{
+    grid-area:about_profile_info ;
+}
+.friends
+{
+    grid-area:friends;
+    
+    display: grid;
+
+    grid-template-columns: 350px;
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "list_friend";
+}
+.list_friend
+{
+    
+    box-shadow: 1px 0px 0px 0px #E0E0E0;
+    display: flex;
+    grid-area:list_friend;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+.list_friend_online
+{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 1px 0px 0px 0px #E0E0E0;
+
+}
+.text_f_online
+{
+    font-size: 13px;
+    display: flex;
+
+    height: 30px;
+    
+}
+.box {
+    display: flex;
+    margin: -5px -5px;
+    flex-wrap: wrap;
+}
+
+.item
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px;
+    box-shadow: 1px 1px 1px 1px #E0E0E0;
+    padding: 20px;
+    border-radius: 50%;
+}
+.count
+{
+    font-size: 13px;
+    display: flex;
+    max-width: 20px;
+    padding-left: 5px;
+    color: #d3d3d3;
+}
+
+.info
+{
+    grid-area:info;
+}
