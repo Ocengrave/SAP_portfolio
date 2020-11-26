@@ -3,7 +3,7 @@
     font-family: 'Comfortaa', cursive;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 50px 1fr;
      grid-template-areas: 
      "header header header"
      "left_margin center_wrapper right_margin";
