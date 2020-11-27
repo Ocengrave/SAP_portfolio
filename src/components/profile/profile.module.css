@@ -1,155 +1,125 @@
-.profile
-{
+/*Designed by Alexey Lyovin 2020*/
+
+.profile {
     font-family: 'Comfortaa', cursive;
     display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 50px 1fr;
-     grid-template-areas: 
-     "header header header"
-     "left_margin center_wrapper right_margin";
-}
-.center_wrapper
-{
-    grid-area:center_wrapper ;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-areas: 
-    "left_menu about_profile";
-    padding: 20px;
-    grid-gap: 10px;
-}
-.left_menu
-{
-    grid-area:left_menu;
-    padding: 10px;
-}
-.about_profile
-{
-    grid-area:about_profile;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    border: none;
-    font-size: 17px;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    box-shadow: 0px 1px 0px 0px #E0E0E0;
-    grid-gap: 40px;
-    display: grid;
-    grid-template-columns: 350px 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "avatar about_profile_info"
-    "friends info";
-}
-.left_margin
-{
-    grid-area:left_margin ;
-}
-.right_margin
-{
-    grid-area:right_margin ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 1fr;
+    grid-template-areas: "header" "nav" "container";
 }
 
-.header
-{
-    grid-area:header ;
-    background-color: #ff9100;
-    box-shadow: 0px 1px 0px 0#E0E0E0;
-
+.nav {
+    display: flex;
+    justify-content: center;
 }
-@media all and (max-width:1280px)
-{
-    .profile
-    {
-        display: none;
-    }
-    .center_wrapper
-    {
-        display: none;
-    }
-    .right_margin
-    {
-        display: none;
-    }
-    .profile_mobile
-    {
-    font-family: 'Comfortaa', cursive;
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 50px 1fr;
-    grid-template-areas: 
-    "header_mobile header_mobile header_mobile"
-    "center_wrapper_mobile center_wrapper_mobile center_wrapper_mobile";
-    }
-    .header_mobile
-    {
-    grid-area:header_mobile ;
+
+.header {
+    grid-area: header;
     background-color: #ff9100;
     box-shadow: 0px 1px 0px 0#E0E0E0;
-    }
-    .center_wrapper_mobile
-    {
+}
+
+.header_info {
+    display: none;
+    justify-content: center;
+    color: white;
+}
+
+.header_info_item_pd {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+}
+
+.header_info_item {
+    padding-top: 10px;
+    grid-area: header_info_item;
+}
+
+.header_info_item_settings {
+    padding-top: 10px;
+    grid-area: header_info_item_settings;
+}
+
+.header_info_item_first {
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.container {
+    grid-area: container;
+}
+
+.header_dropdown_mobile {
+    display: none;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.header_info_item_first {
+    background-image: url('https://marloweandcompany.com/img/menu-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+
+/* Only for mobile versions */
+
+@media all and (max-width:620px) {
+    .profile {
+        font-family: 'Comfortaa', cursive;
         display: grid;
-        grid-area: center_wrapper_mobile;
-        padding: 10px;
-        grid-template-columns: 20% 1fr;
-        grid-template-areas: 
-        "avatar_mobile profil_info_mobile";
-        grid-gap: 10px;
+        grid-template-rows: 1fr 8fr;
     }
-    .avatar_mobile
-    {
-        grid-area:avatar_mobile ;
+    .header_info_item_pd {
+        padding: 20px;
+        display: none;
     }
-    .profil_info_mobile
-    {
-        grid-area:profil_info_mobile ;
+    .header_info {
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
     }
-    .menu_mobile
-    {
-        display: flex;
-        justify-content: center;
-        grid-area: menu_mobile;
-        color: white;
+    .nav {
+        width: 220px;
+        /* фиксируем и выставляем высоту панели на максимум */
+        height: 100%;
+        display: grid;
+        grid-template-rows: 90% 1fr;
+        grid-template-areas: "header_info_item" "header_info_item_settings";
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        /* сдвигаем (прячем) панель относительно левого края страницы */
+        left: -200px;
+        padding: 15px 20px;
+        /* плавный переход смещения панели */
+        -webkit-transition: left 0.3s;
+        -moz-transition: left 0.3s;
+        transition: left 0.3s;
+        z-index: 2000;
+    }
+    .nav:hover {
+        left: 0;
+        background-color: rgba(228, 111, 33, 0.8);
         font-size: 20px;
-        font-weight: 500;
-        padding: 5px;
+        color: white;
+        border-right: 1px solid rgba(228, 111, 33, 0.4);
     }
-    .menu_mobile_item
-    {
+    .header_info_item_pd {
         padding: 10px;
-    }
-    .menu_mobile_small
-    {
-        display: none;
+        font-size: 17px;
+        display: block;
     }
 }
-@media all and (max-width:700px)
-{
-    .menu_mobile_small
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: menu_mobile;
-        color: gray;
-        font-size: 15px;
-        font-weight: 500;
-        padding: 5px;
-    }
-    .center_wrapper_mobile
-    {
-        display: grid;
-        grid-area: center_wrapper_mobile;
-        padding: 10px;
-        grid-template-columns: 20% 1fr;
-        grid-template-areas: 
-        "menu_mobile menu_mobile"
-        "avatar_mobile profil_info_mobile";
-        grid-gap: 10px;
-    }
-    .menu_mobile
-    {
-        display: none;
-    }
-}
+
+
+/* end mobile */
