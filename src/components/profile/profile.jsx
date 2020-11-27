@@ -19,7 +19,14 @@ class Profile extends Component  {
                 <div className={s_profile.avatar_img}>avatar_img</div>
                 <div className={s_profile.profile_info_mobile}>profile info</div>
               </div>
-              <div className={s_profile.info_post}>info post</div>
+              <div className={s_profile.info_post}>
+                <div className={s_profile.page_block}>
+                  <div className={s_profile.page_block_item}>Новости</div>
+                  <div className={s_profile.page_block_item}>Все новости</div>
+                  <div className={s_profile.page_block_item}>Архив</div>
+                </div>
+                
+                info post</div>
          
 
           </div>

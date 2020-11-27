@@ -149,7 +149,7 @@
         box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
     }
     .info_post {
-        padding: 10px;
+        padding: 15px;
         background: white;
         border-radius: 4px;
         box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
@@ -161,6 +161,15 @@
         grid-template-rows: 150px;
         grid-template-areas: "avatar" "info_post";
         grid-gap: 10px;
+    }
+    .page_block {
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 1px 0 0 #d3d9de;
+        font-size: 12px;
+    }
+    .page_block_item {
+        padding: 10px;
     }
 }
 
