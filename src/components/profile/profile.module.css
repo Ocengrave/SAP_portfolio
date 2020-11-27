@@ -1,10 +1,10 @@
 /*Designed by Alexey Lyovin 2020*/
 
 .profile {
-    font-family: 'Comfortaa', cursive;
+    font-family: "Comfortaa", cursive;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5% 1fr;
+    grid-template-rows: 1fr 5% 8fr;
     grid-template-areas: "header" "nav" "container";
 }
 
@@ -61,7 +61,7 @@
 }
 
 .header_info_item_first {
-    background-image: url('https://marloweandcompany.com/img/menu-icon.png');
+    background-image: url("https://marloweandcompany.com/img/menu-icon.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 50px;
@@ -72,11 +72,11 @@
 
 /* Only for mobile versions */
 
-@media all and (max-width:620px) {
+@media all and (max-width: 620px) {
     .profile {
-        font-family: 'Comfortaa', cursive;
+        font-family: "Comfortaa", cursive;
         display: grid;
-        grid-template-rows: 1fr 8fr;
+        grid-template-rows: 1fr 1% 8fr;
     }
     .header_info_item_pd {
         padding: 20px;
@@ -119,6 +119,40 @@
         padding: 10px;
         font-size: 17px;
         display: block;
+    }
+    .avatar {
+        grid-area: avatar;
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "avata_img profile_info_mobile";
+    }
+    .avatar_img {
+        border-radius: 50%;
+        background-color: violet;
+        max-width: 100px;
+        max-height: 90px;
+    }
+    .profile_info_mobile {
+        background-color: yellow;
+    }
+    .info_post {
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
+    }
+    .container {
+        grid-area: container;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px;
+        grid-template-areas: "avatar" "info_post";
+        grid-gap: 10px;
     }
 }
 

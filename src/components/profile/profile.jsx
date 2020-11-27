@@ -14,6 +14,15 @@ class Profile extends Component  {
            
             </div>
           </div>
+          <div className={s_profile.container}>
+              <div className={s_profile.avatar}>
+                <div className={s_profile.avatar_img}>avatar_img</div>
+                <div className={s_profile.profile_info_mobile}>profile info</div>
+              </div>
+              <div className={s_profile.info_post}>info post</div>
+         
+
+          </div>
           {/* only mobile div end  */}
         <div className={s_profile.nav}>
            <div className={s_profile.header_info_item}>
@@ -30,10 +39,7 @@ class Profile extends Component  {
         </div>
         {/*  */}
           </div>
-          <div className={s_profile.container}>
-        
-
-          </div>
+          
        </div>
    );
   }
