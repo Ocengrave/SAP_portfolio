@@ -127,18 +127,26 @@
         border-radius: 4px;
         box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
         display: grid;
-        grid-template-columns: 20% 1fr;
+        grid-template-columns: 30% 1fr;
         grid-template-rows: 1fr;
+        grid-gap: 10px;
         grid-template-areas: "avata_img profile_info_mobile";
     }
     .avatar_img {
         border-radius: 50%;
-        background-color: violet;
-        max-width: 100px;
-        max-height: 90px;
+        padding: 10px;
+        background: white;
+        box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
+        max-width: 150px;
+        min-width: 50px;
+        min-height: 50px;
     }
     .profile_info_mobile {
         background-color: yellow;
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
     }
     .info_post {
         padding: 10px;
