@@ -93,6 +93,7 @@
         height: 100%;
         display: grid;
         grid-template-rows: 90% 1fr;
+        color: white;
         grid-template-areas: "header_info_item" "header_info_item_settings";
         position: fixed;
         top: 0;
