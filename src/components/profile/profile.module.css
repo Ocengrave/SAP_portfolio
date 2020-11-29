@@ -55,7 +55,6 @@
 
 .container {
     grid-area: container;
-
 }
 
 .header_dropdown_mobile {
@@ -75,8 +74,6 @@
     width: 50px;
     display: none;
 }
-
-
 /* Only for mobile versions */
 
 @media all and (max-width: 620px) {
@@ -103,7 +100,6 @@
         width: 100%;
         /* фиксируем и выставляем высоту панели на максимум */
         height: 490px;
-       
         display: grid;
         grid-template-rows: 90% 1fr;
         color: white;
@@ -148,15 +144,12 @@
     }
     .avatar_img {
         border-radius: 50%;
-
         background: white;
         box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
         margin: 0 auto;
         width: 80px;
         height: 80px;
         border-radius: 50%;
-
-      
     }
     .profile_info_mobile {
         padding: 10px;
@@ -193,8 +186,6 @@
         font-size: 97.5%;
         box-shadow: 0 1px 0 0 #d3d9de;
         padding-bottom: 10px; 
-        
-
     }
     .profile_namebar_items
     {
@@ -213,7 +204,6 @@
     .profile_info_items_pd
     {
         padding-top: 5px;
-        
         font-size: 70.5%
     }
     .profile_info_items_pd_more
@@ -245,12 +235,9 @@
     {
         display: grid;
         padding: 10px;
-
         grid-template-rows: 1fr;
         grid-template-columns: 20% 1fr 5%;
-        
         grid-template-areas: 
-        
         "info_post_avatar info_post_name info_post_visible"
         "info_post_post info_post_post info_post_post";
     }
