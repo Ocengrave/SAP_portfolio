@@ -236,7 +236,7 @@
         display: grid;
         padding: 10px;
         grid-template-rows: 1fr;
-        grid-template-columns: 20% 1fr 50px;
+        grid-template-columns: 25% 1fr 50px;
         grid-template-areas: 
         "info_post_avatar info_post_name info_post_visible"
         "info_post_post info_post_post info_post_post";
