@@ -61,7 +61,10 @@ class Profile extends Component  {
                   <div className={s_profile.info_post_name}>Алексей Лёвин
                     <div className={s_profile.info_post_date_add}>Добавлено: <span>11.11.2020</span></div>
                   </div>
-                  <div className={s_profile.info_post_visible}>↓</div>
+                  <div className={s_profile.info_post_visible}>
+                    
+                  </div>
+                  
                   <div className={s_profile.info_post_post}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, unde aliquid illum ab aspernatur, dicta eaque magni, deleniti illo sed a voluptate blanditiis hic dolorem esse incidunt eum enim vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque nostrum, illo ipsa, eum vitae aut dicta officiis error amet neque laborum, asperiores consectetur deleniti. Eum inventore veniam quod neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo sapiente dicta tempore harum perferendis fugit facilis, aut est possimus dolor minima assumenda dolorem in saepe labore eaque eos, architecto cum.</div>
                 </div>
                 </div>

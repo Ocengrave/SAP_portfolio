@@ -177,7 +177,7 @@
         font-size: 12px;
     }
     .page_block_item {
-        padding: 10px;
+        padding: 5px;
     }
     .profile_namebar
     {
@@ -236,7 +236,7 @@
         display: grid;
         padding: 10px;
         grid-template-rows: 1fr;
-        grid-template-columns: 20% 1fr 5%;
+        grid-template-columns: 20% 1fr 50px;
         grid-template-areas: 
         "info_post_avatar info_post_name info_post_visible"
         "info_post_post info_post_post info_post_post";
@@ -268,6 +268,10 @@
         grid-area: info_post_visible;
         justify-self: center;
         padding-top: 10px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%2F%3E%3Cpath%20d%3D%22m6.5%2010%205.5%204.5%205.5-4.5%22%20stroke%3D%22%23c1c5cc%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.875%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
     }
     .info_post_post
     {
