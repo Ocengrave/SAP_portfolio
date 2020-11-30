@@ -231,6 +231,8 @@
     {
         box-shadow: 0 1px 0 0 #d3d9de;
     }
+    /* _______________________________________ */
+    /* Родительский контейнер для новостей */
     .info_post_news
     {
         display: grid;
@@ -241,11 +243,13 @@
         "info_post_avatar info_post_name info_post_visible"
         "info_post_post info_post_post info_post_post";
     }
+
     .info_post_avatar
     {
         grid-area: info_post_avatar;
-        
     }
+    /* _______________________________________ */
+    /* конец родительского контейнера + захватываем дочернюю зону */
     .info_post_avatar_img
     {
         border-radius: 50%;
@@ -263,6 +267,21 @@
         color:#2a5885;
         text-align: left;
     }
+    /* _______________________________________ */
+    /* стиль текста для ссылки по имени в инфо посте */
+    .info_post_name a
+    {
+        text-decoration: none;
+        color:#2a5885;
+    }
+    .info_post_name a:hover
+    {
+        text-decoration: underline;
+    }
+    /* конец стиля */
+    /* _______________________________________ */
+    /* Стили для drop-down
+     кнопки в инфо посте */
     .info_post_visible
     {
         grid-area: info_post_visible;
@@ -285,7 +304,8 @@
         font-size: 70%;
         color: #9b9a9a;
     }
+    /* конец стиля drop-down
+     кнопки в инфо посте
+    */
+    /* _______________________________________ */
 }
-
-
-/* end mobile */
