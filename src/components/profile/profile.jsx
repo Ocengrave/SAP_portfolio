@@ -1,6 +1,7 @@
 import s_profile from './profile.module.css';
 import { Component } from 'react';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Profile extends Component  {
   
@@ -12,7 +13,7 @@ class Profile extends Component  {
         <div className={s_profile.nav}>
            <div className={s_profile.header_info_item}>
              <div className={s_profile.header_info_item_pd}>ПРОФИЛЬ</div>
-             <div className={s_profile.header_info_item_pd}>СООБЩЕНИЯ</div>
+            <NavLink to="/messages"><div className={s_profile.header_info_item_pd}>СООБЩЕНИЯ</div></NavLink> 
              <div className={s_profile.header_info_item_pd}>ДРУЗЬЯ</div>
              <div className={s_profile.header_info_item_pd}>МУЗЫКА</div>
              <div className={s_profile.header_info_item_pd}>ВИДЕО</div>

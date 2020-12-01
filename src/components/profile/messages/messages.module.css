@@ -1,0 +1,55 @@
+
+@media all and (max-width: 620px) {
+.messages_items
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+.avatar
+{
+    grid-area: avatar;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user
+{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "avatar name"
+    "item item";
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #d3d9de;
+    min-height: 30px;
+    grid-area: item;
+}
+.item
+{
+    display: block;
+    grid-column: 1 / 4;
+    padding: 10px;
+}    
+.container a
+{
+    text-decoration: none;
+    color: black;
+}
+.name
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+}

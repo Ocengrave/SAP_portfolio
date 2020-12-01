@@ -4,6 +4,8 @@ import Profile from './components/profile/profile.jsx';
 import Footer from './components/footer/footer.jsx';
 import './main.css';
 import {BrowserRouter,Route} from 'react-router-dom';
+import Messages from './components/profile/messages/messages.jsx';
+import Dialog from './components/profile/messages/dialog/dialog.jsx';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       
       <Route exact path="/" component={Connect_wrapper}/>
       <Route path="/profile" component={Profile}/>
+      <Route path="/messages" component={Messages}/>
+      <Route path="/dialog" component={Dialog}/>
       <Footer/>
     </div>
     </BrowserRouter>
