@@ -9,6 +9,7 @@ const Dialogs = (props) => {
     let name = props.name //user name
     let ava = props.avatar //user avatar
     let last_message = props.last_message
+    
     // список диалогов
     return <div className={s_messages.messages_items}>
         <NavLink to={nav}>
@@ -31,11 +32,19 @@ const Dialogs = (props) => {
     </div>
 }
 
-class Messages extends Component {
+class Messages extends Component { 
     render() {
+        let dialogsData = [
+            {id:1, name:'Светлана Лёвина'}, 
+            {id:2, name:'Андрей Дубов'}
+        ]
+        
         return (
             <div className={s_messages.container}>
-                <Dialogs name="Светлана Светлановна" id="1" avatar="https://sun1-26.userapi.com/impg/fY54ae27V-Vcy4XXJhS2t10ps5BQk0I4QsNGQA/Xol7_0_s7gg.jpg?size=200x0&quality=90&crop=78,42,1480,2017&sign=2a981e0d6bc534cc234fbe2e7e52914c&ava=1" last_message="Lorem Ipsum" />
+                {/* рефакторим захордкореные пропсы, 
+                мы же будем сервак исполдьзовать? 
+                пока все так-же хардкорим массивом*/}
+                <Dialogs name={dialogsData[0].name} id={dialogsData[0].id} avatar="https://sun1-26.userapi.com/impg/fY54ae27V-Vcy4XXJhS2t10ps5BQk0I4QsNGQA/Xol7_0_s7gg.jpg?size=200x0&quality=90&crop=78,42,1480,2017&sign=2a981e0d6bc534cc234fbe2e7e52914c&ava=1" last_message="Lorem Ipsum" />
                 <Dialogs name="Андрей Дубов" id="2" avatar="https://vk.com/images/camera_200.png?ava=1" last_message="hello" />
             </div>
         );
