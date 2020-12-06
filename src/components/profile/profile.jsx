@@ -32,9 +32,9 @@ class Profile extends Component {
               </div>
             </div>
           </div>
-          //* Component from conteiner_profile/post_selector */
+          {/* //* Component from conteiner_profile/post_selector */}
           <PostSelector />
-          //* end PostSelector Component */
+          {/* //* end PostSelector Component  */}
 
         </div>
       </div>
