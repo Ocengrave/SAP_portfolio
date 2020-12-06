@@ -5,20 +5,18 @@ import Footer from './components/footer/footer.jsx';
 import './main.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Messages from './components/profile/messages/messages.jsx';
-import Dialog from './components/profile/messages/dialog/dialog.jsx';
-import Main from './components/profile/messages/dialog/main.jsx';
 
-function App() {
+function App(props) {
+
   return (
     <BrowserRouter>
       <div className="wrapper">
 
-        <Route exact path="/" component={Connect_wrapper} />
-        <Route path="/profile" component={Profile} />
-        {/* For profile.jsx go to path on clic drop-down menu - messages */}
-        <Route path="/messages" component={Messages} /> 
+        <Route exact path="/" render={() => <Connect_wrapper />} />
+        <Route path="/profile" render={() => <Profile myPost={props.myPost} />} />
+        {/* For profile.jsx go to path on click drop-down menu - messages */}
+        <Route path="/messages" render={() => <Messages newPost={props.newPost}/>} />
         {/* ************************************************************ */}
-        <Route path="/dialog" component={Main} />
         <Footer />
       </div>
     </BrowserRouter>

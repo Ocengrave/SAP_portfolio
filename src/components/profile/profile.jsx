@@ -5,15 +5,14 @@ import React from 'react';
 import DropDown from './drop_down/drop_down';
 import PostSelector from './container_profile/post_selector';
 
-class Profile extends Component {
-
-  render() {
+const Profile =(props)=>{
+  //* пока уберем классы и наследование */
     // **************** PROFILE CONTENT **************** //
     return (
       <div className={s_profile.profile}>
          //* DropDowm is navbar + header for mobile menu on top include `.profile` class from profile.module.css */
         <DropDown />
-        //* End DropDown navbar*/
+        {/*//* End DropDown navbar*/}
         <div className={s_profile.container}>
           <div className={s_profile.avatar}>
             <img src="https://sun1-26.userapi.com/impg/fY54ae27V-Vcy4XXJhS2t10ps5BQk0I4QsNGQA/Xol7_0_s7gg.jpg?size=200x0&quality=90&crop=78,42,1480,2017&sign=2a981e0d6bc534cc234fbe2e7e52914c&ava=1" alt="Avatar" className={s_profile.avatar_img} />
@@ -32,12 +31,11 @@ class Profile extends Component {
             </div>
           </div>
           {/* //* Component from conteiner_profile/post_selector */}
-          <PostSelector />
+          <PostSelector myPost={props.myPost}/> 
           {/* //* end PostSelector Component  */}
         </div>
       </div>
     );
-  }
 }
 
 export default Profile;

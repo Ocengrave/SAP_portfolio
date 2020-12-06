@@ -2,14 +2,10 @@
 //* by Alexey Lyovin 2020 */
 import s_profile from './../profile.module.css';
 import Post from './../post/post.jsx';
-const PostSelector = () => {
-    //* hard code without bd for our posts */
-    let myPost = [
-        { id: 1, text: 'Hello world' },
-        { id: 2, text: "Ща мы как вынесем это react на раз два" }
-    ]
+const PostSelector = (props) => {
+
     //* Convert our myPost mass in generated posts for profile.jsx */
-    let newPost = myPost
+    let newPost = props.myPost //выносим посты в пропсы
         .map(post => (<Post text={post.text} id={post.id} />))
     return (
         <div className={s_profile.info_post}>
