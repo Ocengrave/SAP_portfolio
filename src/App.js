@@ -15,7 +15,9 @@ function App() {
 
         <Route exact path="/" component={Connect_wrapper} />
         <Route path="/profile" component={Profile} />
-        <Route path="/messages" component={Messages} />
+        {/* For profile.jsx go to path on clic drop-down menu - messages */}
+        <Route path="/messages" component={Messages} /> 
+        {/* ************************************************************ */}
         <Route path="/dialog" component={Main} />
         <Footer />
       </div>
