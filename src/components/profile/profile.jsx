@@ -8,7 +8,6 @@ import PostSelector from './container_profile/post_selector';
 class Profile extends Component {
 
   render() {
-
     // **************** PROFILE CONTENT **************** //
     return (
       <div className={s_profile.profile}>
@@ -35,7 +34,6 @@ class Profile extends Component {
           {/* //* Component from conteiner_profile/post_selector */}
           <PostSelector />
           {/* //* end PostSelector Component  */}
-
         </div>
       </div>
     );
