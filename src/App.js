@@ -22,7 +22,7 @@ function App(props) {
         <Messages state={props.state.messages}/>} />
 
         <Route path="/dialog" render={()=>
-        <Dialog state={props.state.messages.newPost.id}/>} />
+        <Dialog/>} />
        
         <Footer/>
       </div>

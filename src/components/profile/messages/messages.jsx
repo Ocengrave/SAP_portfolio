@@ -7,7 +7,7 @@ const Messages = (props) => {
     //вынесли все в state файл state.jsx
     
     let generatePost = props.state.newPost
-        .map(newPost => (<NavLink to={newPost.id_link} ><GeneratePost id={newPost.id} avatar_url={newPost.url} name={newPost.name} text={newPost.text} id_link={newPost.id_link}/></NavLink>))
+        .map(newPost => (<NavLink to={newPost.id} ><GeneratePost id={newPost.id} avatar_url={newPost.url} name={newPost.name} text={newPost.text} id_link={newPost.id_link}/></NavLink>))
         //  пока харддкорим id_link, по каким-то причинам newPost.id не читается в NavLink
     return (
         // рефакторим messages.jsx, будем делать по феншую
