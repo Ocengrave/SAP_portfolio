@@ -5,6 +5,7 @@ import Footer from './components/footer/footer.jsx';
 import './main.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Messages from './components/profile/messages/messages.jsx';
+import Dialog from './components/profile/messages/dialog/dialog.jsx';
 
 function App(props) {
 
@@ -13,11 +14,17 @@ function App(props) {
       <div className="wrapper">
 
         <Route exact path="/" render={() => <Connect_wrapper />} />
-        <Route path="/profile" render={() => <Profile myPost={props.myPost} />} />
+        <Route path="/profile" render={() => 
+        <Profile state={props.state.profile} />} />
         {/* For profile.jsx go to path on click drop-down menu - messages */}
-        <Route path="/messages" render={() => <Messages newPost={props.newPost}/>} />
-        {/* ************************************************************ */}
-        <Footer />
+
+        <Route path="/messages" render={() => 
+        <Messages state={props.state.messages}/>} />
+
+        <Route path="/dialog" render={()=>
+        <Dialog state={props.state.messages.newPost.id}/>} />
+       
+        <Footer/>
       </div>
     </BrowserRouter>
 

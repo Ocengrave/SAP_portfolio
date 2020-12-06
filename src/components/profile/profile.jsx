@@ -30,8 +30,8 @@ const Profile =(props)=>{
               </div>
             </div>
           </div>
-          {/* //* Component from conteiner_profile/post_selector */}
-          <PostSelector myPost={props.myPost}/> 
+          {/* //* вынесли все в state файл state.jsx*/}
+          <PostSelector myPost={props.state.myPost}/> 
           {/* //* end PostSelector Component  */}
         </div>
       </div>

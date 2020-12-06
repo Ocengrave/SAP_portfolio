@@ -6,6 +6,13 @@
     flex-direction: column;
     padding: 5px;
 
+
+}
+/* скинем стайлы навлинка */
+.messages_items a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .avatar
