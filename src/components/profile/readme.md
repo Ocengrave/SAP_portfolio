@@ -1,12 +1,12 @@
 # Старт работы с проектом
 profile.jsx - отвечат за вывод окна профиля нашего пользователя
-### `profile.jsx`
+### `profile/profile.jsx`
 основной компонент
-### `post/post.jsx`
+### `profile/post/post.jsx`
 контент который выводит наши посты на страницу profile.jsx
-### `profile.module.css`
+### `profile/profile.module.css`
 содержит стайлы практически для всех компонентов в папке /profile
-### `drop_down/drop_down.jsx`
+### `profile/drop_down/drop_down.jsx`
 содержит drop down меню для мобильной версии соц сети, использует NavLink
-### `container_profile/post_selector`
+### `profile/container_profile/post_selector`
 выводит селекторы которые находятся над постами пользователя
